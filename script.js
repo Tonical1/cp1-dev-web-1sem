@@ -1,25 +1,14 @@
-// Operadores: "!=" (diferente de), "==" (igual à) e ">=" (maior igual que) exemplificados.
-// 
+//Cálculo de IMC
+let peso = parseFloat(prompt("Digite seu peso em KG: "));
+let altura = parseFloat(prompt("Digite sua altura em m: "));
+let imc = parseFloat( peso/(altura**2) );
 
-let idade = parseInt(prompt("Insira uma idade: ") ); 
-if(idade != 0){
-    console.log("Inseriu uma idade válida!")
+if(imc < 18.5){
+    console.log(imc,":Abaixo do peso")
+} 
+else if (18.5 <= imc && imc <=24.9 ){
+    console.log(imc,":Peso ideal")
 }
 else{
-    console.log("idade inválida!")
-}
-
-//exemplo 2
-if(idade >= 18){
-    console.log("Atingiu a maioridade")
-}
-else{
-    console.log("Menor de idade")
-}
-//exemplo 3
-if(idade == 18){
-    console.log("Acabou de completar a maioridade (18 anos)")
-}
-else{
-    console.log("Não possui exatamente 18 anos")
+    console.log(imc,":Acima do peso")
 }
