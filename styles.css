@@ -1,0 +1,5 @@
+body{ 
+    background-image: linear-gradient(to right, purple, white);
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
